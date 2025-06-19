@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Start Earning with Ecommerce</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="description" content="Join our trading platform and start earning today. Easy sign up. No experience needed.">
+  <link rel="icon" href="https://via.placeholder.com/16" type="image/x-icon">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow p-4 flex justify-center">
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white text-center py-16 px-4">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Start Earning with Ecommerce Today</h1>
+    <p class="text-lg mb-6">Join thousands making daily income from Ecommerce. No experience needed.</p>
+    <a href="https://singingfiles.com/1818288" class="bg-yellow-400 text-black px-8 py-3 rounded-full font-bold hover:bg-yellow-300 transition">
+      Claim Your Course Now
+    </a>
+    
+  </section>
+  
+  <!-- Features -->
+  <section class="py-16 px-6 max-w-5xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-10">Why Join This Free Couse?</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="font-semibold text-lg mb-2">Earn Daily</h3>
+        <p>The automated system helps you earn while you sleep.</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="font-semibold text-lg mb-2">No Experience Needed</h3>
+        <p>Just sign up, fund your account and start making money.</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="font-semibold text-lg mb-2">24/7 Support</h3>
+        <p>The expert team is here to guide you at every step.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="bg-gray-200 py-12 px-4">
+    <h3 class="text-2xl font-bold text-center mb-6">Success Stories</h3>
+    <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+      <div class="bg-white p-4 rounded shadow">
+        <p>"I made over $600 in my first week. Totally worth it!"</p>
+        <p class="mt-2 font-semibold text-sm text-right">— David L.</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <p>"Best decision ever. I have income just from home."</p>
+        <p class="mt-2 font-semibold text-sm text-right">— Lucas M.</p>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- Final CTA -->
+<section class="bg-blue-600 text-white py-12 text-center">
+  <h2 class="text-2xl font-bold mb-4">Special Offer</h2>
+
+  <a href="https://your-affiliate-link.com"
+     class="bg-yellow-400 text-black px-8 py-3 rounded-full font-bold hover:bg-yellow-300 transition">
+    Get Started Now
+ </a>
+    <!-- Countdown inserted below the button -->
+    <p id="countdown" class="text-sm mt-4 font-semibold text-white"></p>
+    <p class="text-sm mt-1">Only a few spots left for this offer.</p>
+  </section>
+</section>
+
+<!-- Countdown Timer Script -->
+<script>
+  let countdownDate = new Date().getTime() + 10 * 60 * 1000;
+  const countdownEl = document.getElementById("countdown");
+  const timer = setInterval(() => {
+    const now = new Date().getTime();
+    const diff = countdownDate - now;
+    if (diff <= 0) {
+      clearInterval(timer);
+      countdownEl.innerText = "Offer expired. Contact support.";
+    } else {
+      const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const secs = Math.floor((diff % (1000 * 60)) / 1000);
+      countdownEl.innerText = `⚠️ Bonus offer expires in ${mins}m ${secs}s`;
+    }
+  }, 1000);
+</script>
+
+  <!-- Footer / Disclaimer -->
+  <footer class="text-center text-sm text-gray-500 py-6 bg-gray-100 px-4">
+    <p>&copy; 2025 EcoNow CPA Offers</p>
+    <p class="mt-2">Ecommerce involves risk. You could lose your investment. This page is for promotional purposes only.</p>
+    <p><a href="#" class="underline">Privacy Policy</a> | <a href="#" class="underline">Terms</a></p>
+  </footer>
+
+</body>
+</html>
